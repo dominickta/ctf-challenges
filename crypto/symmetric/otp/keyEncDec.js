@@ -1,9 +1,9 @@
 /**
- * Decrypt a message given the key that was used to encrypt
+ * Decrypts a cipher, given its corresponding key.
  * 
- * @param cipher a encrypted message that you want to decrypt
- * @param key a byte array that you will use to dencrypt the message
- * @returns a decrypted message
+ * @param cipher a byte array of size n
+ * @param key a byte array of size n
+ * @returns a string representing the decrypted message from the cipher
  */
 function decrypt(cipher, key) {
 	if (cipher.length != key.length) {
