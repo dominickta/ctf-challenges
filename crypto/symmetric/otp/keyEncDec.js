@@ -15,15 +15,10 @@ function decrypt(cipher, key) {
 
 
 function encryption(msg, key){
-
     let encoder = new TextEncoder();
-
-    let msgByte = encoder.encode(msg);
-
-
-
-    var cipher;
-    for (let i=0;i<msgbyte.length;i++) cipher[i]=msgbyte[i]^key[i];
+    let msgbyte = encoder.encode(msg);
+    var cipher = [];
+    for (let i=0;i<msgbyte.length;i++) cipher.push(msgbyte[i]^key[i]);
     
     return cipher;
 }
