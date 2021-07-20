@@ -1,6 +1,48 @@
 <html>
-	<p> hello </p>
-	<label>Enter text: </label>
-	<input type="text">
-	<input type="submit" value="Submit">
+	<head>
+		<script src="keyEncDec.js"></script>
+	</head>
+
+	<body>
+		<h1>
+			OTP
+		</h1>
+
+		<p id="prompts">
+			You and your friend James are trying to send a secret message to each other. 
+			Both of you have access to the key, 
+			which you will use to encrypt and decrypt each other’s messages
+			You want to send the following message to James, 
+			encrypt the message to prevent other people from knowing.
+		</p>
+
+		<p id="key"></p>
+		<p id="msg"></p>
+
+		<!-- -->
+		<form id="encrypt_form" onsubmit="return false">
+			<label id="user_input_encrypt">Enter hex (encrypted message): </label>
+			<input type="text" id="encrypted"/>
+			<button id="encryption_test" type="submit">Submit</button>
+		</form>
+		
+
+		<section id="user_input_decrypt" style="display:none">
+			<p>
+				In response to your message, James has sent the following message back, but it is encrypted, decrypt the message to figure out 
+				James’ original message
+			</p>
+			
+			<p id="second_key"></p>
+			<p id="msgBack"></p>
+			<form id="decrypt_form" onsubmit="return false">
+				<label id="user_input_decrypt">Enter String (decrypted message): </label>
+				<input type="text" id="decrypted"/>
+				<button id="decryption_test" type="submit">Submit</button>
+			</form>
+
+	
+		</section>
+		
+	</body>
 </html>
