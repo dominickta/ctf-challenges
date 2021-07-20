@@ -35,7 +35,7 @@ function encryption(msg, key){
  * @returns an 8 bit int array, each element represents a byte
  */
 function keyGen (length) {
-    var key = new Unit8Array(length);
+    var key = new Uint8Array(length);
     window.crypto.getRandomValues(key);
 
     return key;
