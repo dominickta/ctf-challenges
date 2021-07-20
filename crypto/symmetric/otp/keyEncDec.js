@@ -12,3 +12,16 @@ function decrypt(cipher, key) {
 	}
 	return msg;
 }
+
+/**
+ * Generate a cryptographically random key
+ * 
+ * @param length number of bytes of the key 
+ * @returns an 8 bit int array, each element represents a byte
+ */
+function keyGen (length) {
+    var key = new Unit8Array(length);
+    window.crypto.getRandomValues(key);
+
+    return key;
+}
