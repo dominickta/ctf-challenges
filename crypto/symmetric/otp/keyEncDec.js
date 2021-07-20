@@ -1,3 +1,10 @@
+/**
+ * Decrypts a cipher, given its corresponding key.
+ * 
+ * @param cipher a byte array of size n
+ * @param key a byte array of size n
+ * @returns a string representing the decrypted message from the cipher
+ */
 function decrypt(cipher, key) {
 	if (cipher.length != key.length) {
 		return null;
