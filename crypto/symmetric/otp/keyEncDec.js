@@ -13,6 +13,21 @@ function decrypt(cipher, key) {
 	return msg;
 }
 
+
+function encryption(msg, key){
+
+    let encoder = new TextEncoder();
+
+    let msgByte = encoder.encode(msg);
+
+
+
+    var cipher;
+    for (let i=0;i<msgbyte.length;i++) cipher[i]=msgbyte[i]^key[i];
+    
+    return cipher;
+}
+
 /**
  * Generate a cryptographically random key
  * 
