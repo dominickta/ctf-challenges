@@ -1,0 +1,41 @@
+<html>
+	<head>
+        <script src="keyEncDec.js"></script>
+		<script src="c2scripts.js"></script>
+	</head>
+
+	<body>
+		<h1>
+			OTP
+		</h1>
+
+		<p class="prompts">
+			Supposed you asked Alice to send the following message to Bob:
+            <br>
+            <br>"Hi there!"<br>
+            <br>
+            You know that they are going to reuse the One Time Pad key.
+            You intercepted the packet sent and learnt the encoded text being:
+
+		</p>
+
+		<p id="cipher"></p>
+
+        <p class="prompts">
+            Now, you intercept a message sent by Bob to Alice. Try to decrypt
+            the ciphertext. 
+            The ciphertext is:
+
+        </p>
+
+        <p id="cipher2"></p>
+
+		<!-- -->
+		<form id="decrypt_form" onsubmit="return false">
+			<label id="user_input_decrypt">What did Bob send to Alice (in plaintext): </label>
+			<input type="text" id="decrypted"/>
+			<button id="decryption_test" type="submit">Submit</button>
+		</form>
+		
+	</body>
+</html>
