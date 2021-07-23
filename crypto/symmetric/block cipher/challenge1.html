@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<script src="encDec.js"></script>
+		<script src="c1scripts.js"></script>
+	</head>
+
+	<body>
+		<h1>
+			ECP
+		</h1>
+
+		<p id="prompts">
+		After discovering that Electronic Code Block is not good at encrypting messages, you and your friend James have decided to use Block Ciphers instead. 
+		You both have access the same key and you want to send the following message to James, using the key send an encrypted message to James. 
+		</p>
+
+		<p id="key"></p>
+		<p id="msg"></p>
+
+		<!-- -->
+		<form id="encrypt_form" onsubmit="return false">
+			<label id="user_input_encrypt">Enter string (encrypted message): </label>
+			<input type="text" id="encrypted"/>
+			<button id="encryption_test" type="submit">Submit</button>
+		</form>
+		
+
+		<section id="user_input_decrypt" style="display:none">
+			<p>
+				In response to your message, James has sent the following message back, but it is encrypted, decrypt the message to figure out 
+				James’ original message
+			</p>
+			
+			<p id="second_key"></p>
+			<p id="msgBack"></p>
+			<form id="decrypt_form" onsubmit="return false">
+				<label id="user_input_decrypt">Enter string (decrypted message): </label>
+				<input type="text" id="decrypted"/>
+				<button id="decryption_test" type="submit">Submit</button>
+			</form>
+
+	
+		</section>
+		
+	</body>
+</html>

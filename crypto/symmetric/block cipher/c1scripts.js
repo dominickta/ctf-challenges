@@ -39,22 +39,12 @@ function populateKey() {
 
 // Verify that the user inputted the proper encryption of the original msg
 function test_encrypt() {
-	console.log("testing..");
-	// Get user's input
-	var reply = document.getElementById("encrypted").value;
-	// Get the answer key (i.e. what the user's answer should be)
-	var answer_key = "";
-	for (let i = 0; i < cipher.length; i++) {
-		answer_key = answer_key + cipher[i].toString(16);
-	}
-
-	console.log("Answer to String:" + answer_key);
-	console.log("User's reply:" + reply);
-	if (reply === answer_key) {
+	var encryptedMessage = document.getElementById("encrypted").value;
+	if( encryptedMessage === cipher) {
 		alert("Your encryption is correct");
 		document.getElementById("user_input_decrypt").style.display = "contents";
 	} else {
-		alert("Your encryption is wrong. Try again");
+		alert("Your encryption is wrong");
 	}
 }
 
