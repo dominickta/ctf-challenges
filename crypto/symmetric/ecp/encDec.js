@@ -1,12 +1,11 @@
-
 function keyGen(length) {
     key = Math.floor(Math.random() * (length - 1)) + 1;
     return key
 }
 
 function encryption (message, key) {
-    var encrypted = str.substring(d, str.length) +
-              str.substring(0, d);
+    var encrypted = message.substring(key, key.length) +
+              message.substring(0, key);
     return encrypted
 
 }
