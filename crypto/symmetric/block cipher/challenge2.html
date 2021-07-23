@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<script src="encDec.js"></script>
+		<script src="c2scripts.js"></script>
+	</head>
+
+	<body>
+		<h1>
+			Block Ciphers
+		</h1>
+
+		<p id="prompts">
+			Alice and Bob noticed that OTP is too troublesome to use.
+			They chose to use Block Ciphers as their encryption algorithm. 
+			However, they are so confident that they chose to implement their own encryption algorithm. 
+			They chose to use a 3-bit long key and kept their messages at 4 bits long. 
+		</p>
+
+		<!-- a way to display the table-->
+
+		<p>You intercepted 4 messages:</p>
+		
+		<ul id="ciphertexts"></ul>
+
+		<!-- -->
+		<form id="encrypt_form" onsubmit="return false">
+			<ul>
+				<li>
+					<label id="user_input_encrypt">Enter message 1 (as an integer): </label>
+					<input type="number" class="encrypted"/>
+				</li>
+
+				<li>
+					<label id="user_input_encrypt">Enter message 2 (as an integer): </label>
+					<input type="number" class="encrypted"/>
+				</li>
+
+				<li>
+					<label id="user_input_encrypt">Enter message 3 (as an integer): </label>
+					<input type="number" class="encrypted"/>
+				</li>
+
+				<li>
+					<label id="user_input_encrypt">Enter message 4 (as an integer): </label>
+					<input type="number" class="encrypted"/>
+				</li>
+			</ul>			
+			<button id="encryption_test" type="submit">Submit</button>
+		</form>		
+	</body>
+</html>
