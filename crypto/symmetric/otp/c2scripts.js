@@ -4,12 +4,14 @@ let reused_key;  // the key being reused in the conversation
 
 window.onload = populateInfo;
 
-// populate all necessary info for thsi challenge
+// populate all necessary info for this challenge
 function populateInfo() {
+    // 1. generate a key that's going to be used more than once
     reused_key = keyGen(bob_msg.length);
     
     // encrypt alice's message
     let encrypted_ali_msg = encryption(ali_msg, reused_key);
+    
     // parse the encrypted message(in array) to hex string
     let hex_enc_ali_msg = "";
     console.log(encrypted_ali_msg.length);
@@ -33,6 +35,7 @@ function populateInfo() {
     document.getElementById("decrypt_form").addEventListener("submit", test_decrypted);
 }
 
+// check if the answer provided by the user is correct.
 function test_decrypted() {
 	var decryptedMessage = document.getElementById("decrypted").value;
 	if( decryptedMessage === bob_msg) {
