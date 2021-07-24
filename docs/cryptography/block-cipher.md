@@ -1,7 +1,7 @@
 ---
 title: Block Ciphers (Alternative to OTP)
 parent: Cryptography
-nav_order: 3
+nav_order: 4
 ---
 
 # Block Cipher Encryption
