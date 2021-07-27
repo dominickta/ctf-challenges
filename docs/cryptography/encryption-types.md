@@ -4,26 +4,10 @@ parent: Cryptography
 nav_order: 2
 ---
 
-# What is encryption?
-Encryption is the process of turning plaintext, like a password,
-and converting it into ciphertext. In order
-to understand the message behind a ciphertext, you have to 'decrypt it'.
-
-**Vocab**{: .label .label-green} 'Plaintext' is any piece of text that can be read or used directly.
-
-**Vocab**{: .label .label-green} 'Ciphertext' or 'encrypted text' is text that is unreadable and must
-be converted back into the original plaintext to be read.
-
-## Types of Encryption
+# Types of Encryption
 There are two main types of encryption methods that are used today:
 1. Symmetric encryption
 2. Asymmetric encryption
-
-Both of these types of encryptions involve using 'keys' to encrypt and decrypt messages.
-To encrypt a message, you would use an algorithm combine your plaintext with the key to produce ciphertext.
-To decrypt a message, you would use an algorithm to combine the ciphertext with the key to figure out the plaintext.
-
-**Vocab**{: .label .label-green } A 'key' in cryptography is just a string of text that looks like a bunch of random characters.
 
 ## Symmetric Encryption
 In symmetric encryption there is a single key being used between two parties
@@ -32,8 +16,6 @@ to encrypt and decrypt data (both parties use the same key so it is _symmetrical
 This means that _anyone_ with access to the key can encrypt and decrypt messages.
 Therefore, if you're using symmetric encryption, it is extremely important to
 keep this key a secret.
-
-**Vocab**{: .label .label-green } A 'party' is any person or group of people that belong together.
 
 ### Diagram of symmetric encryption:
 ![diagram of symmetric encryption](https://ico.org.uk/media/images/other/2260256/symmetric.gif)
